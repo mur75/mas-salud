@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@600&family=Lato&display=swap');
+
+:root {
+    /* --tipografia_titulos_bold:'Archivo Black'; font-size: 12px;color: #0077F0; */
+    /* --tipografia_titulos_sencillos:'Archivo'; font-size: 12px;color: #f00000; */
+    --color_azul_principal: #0077F0;
+    --color_botones: #1C65AA;
+    --color_botones_2: #46B0EF;
+    --color_fondo_formulario: #E1FDFE;
+    --color_textos:#6E6E6E;
+    --color_textos_2:#33C0E5;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Archivo';
+}
+
+.fondo_nav{
+    height: 650px;
+    background-color: #a3a3a3;
+    background-image: url(foto_nav_home);
+    background-size: cover;
+    /* COMO HAGO PARA PONERLE LA RUTA DESDE OTRA CARPETA QUE NO SEA CSS
+    hacer una ruta como esta_  cover; assets/img/fotos/foto_nav_home
+    proba estas propiedades
+    background-repeat: no-repeat;background-size: */
+}
+
+.menu{
+    height: 90px;
+    /* background-color: #ffffff;opacity: 0.2; */
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    align-items: center;
+}
+
+/* .fondo_menu{
+    height: 90px;
+    background-color: #ffffff;
+} */
+
+.menu a {
+    font-family: 'Archivo';
+    font-size: 19px; color: #ffffff;
+    /* letter-spacing: 1px; */
+    text-shadow: 1px 1px 2px #7e7e7e;
+    text-decoration: none;
+    padding: 0px 15px;
+}
+
+.logo_menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.menu_items{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.textos_nav{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    padding: 130px 120px;
+}
+
+.titulos_bold {
+/* font-family: var(--tipografia_titulos_bold); */
+font-family: 'Archivo Black', sans-serif; color: var(--color_azul_principal); font-size: 60px;
+line-height: 55px;
+margin: 30px 0px;
+}
+
+.comentario_titulos {
+    /* font-family: var(--tipografia_titulos_bold); */
+    font-family: 'Archivo', sans-serif; color: var(--color_textos); font-size: 25px;
+    margin: 35px 0px;
+    }
+
+.boton {
+    display: flex;
+    flex-direction: row;
+    width: 190px;
+    height: 50px;
+    display: inline-block;
+    font-family: 'Archivo', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--color_azul_principal);
+    transition: all 200ms;
+}
+
+.linea_footer {
+    border-bottom:solid 6px var(--color_azul_principal);
+    width:100%;
+    margin: 0px 0px 20px 0px;   
+}
+
+footer{
+    height: 200px;
+    background-color: #ffffff;
+}
+
+.footer_logo_datos {
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    font-family:'Archivo'; color: var(--color_textos); font-size: 14px; font-weight: 100;
+}
+
+.footer_logo_datos div {
+padding: 0px 60px;
+}
+
+.footer_redes {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family:'sans-serif'; color: var(--color_textos); font-size: 14px;
+}
+
+.footer_redes div {
+padding: 0px 10px;
+}
+
+.logos_redes {
+    display: flex;
+    flex-direction: row;
+}
+
+.logos_redes img {
+    height: 34px;
+}
