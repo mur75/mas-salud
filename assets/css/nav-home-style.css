@@ -18,13 +18,13 @@
 }
 body {
     font-family: 'Archivo';
+    background-image: url(foto_nav_home);
+    background-size: cover;
 }
 
 .fondo_nav{
     height: 650px;
-    background-color: #a3a3a3;
-    background-image: url(foto_nav_home);
-    background-size: cover;
+    /* background-color: #a3a3a3; */
     /* COMO HAGO PARA PONERLE LA RUTA DESDE OTRA CARPETA QUE NO SEA CSS
     hacer una ruta como esta_  cover; assets/img/fotos/foto_nav_home
     proba estas propiedades
@@ -37,6 +37,8 @@ body {
     display: grid;
     grid-template-columns: repeat(2,50%);
     align-items: center;
+    position: relative;
+    z-index: 2;
 }
 
 /* .fondo_menu{
@@ -145,4 +147,21 @@ padding: 0px 10px;
 
 .logos_redes img {
     height: 34px;
+}
+
+.fondo-opaco{
+    width: 100%;
+    height: 90px;
+    /* height: 21vh; */
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    /* filter: opacity(0.5); */
+    opacity: 0.5;
+}
+
+.menu{
+    position: relative;
+    z-index: 2;
 }
