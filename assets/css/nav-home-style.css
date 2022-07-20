@@ -19,12 +19,12 @@
 }
 body {
     font-family: 'Archivo';
-    background-image: url(foto_nav_home);
-    background-size: cover;
+    /* background-size: cover; */
 }
 
 .fondo_nav{
     height: 650px;
+    background-image: url(foto_nav_home);
     /* background-color: #a3a3a3; */
     /* COMO HAGO PARA PONERLE LA RUTA DESDE OTRA CARPETA QUE NO SEA CSS
     hacer una ruta como esta_  cover; assets/img/fotos/foto_nav_home
