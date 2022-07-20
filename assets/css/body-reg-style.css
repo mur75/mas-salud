@@ -24,6 +24,10 @@
     align-items: center;
 }
 
+.imagen-titulo{
+    margin: 20px;
+}
+
 .container-registro li{
     display: flex;
     flex-direction: column;
@@ -35,7 +39,7 @@
     font-family: arial;
     color: #fff;
     padding: 20px 0 20px 43px;
-    background-color: var(--color_azul_principal);
+    background-color:var(--color_botones_2);
     width: 365px;
     font-family: 'Archivo', sans-serif;
     font-size: 20px
@@ -50,7 +54,7 @@ h4{
 .caja-form{
     border: 1px solid;
     padding: 20px;
-    border-color: var(--color_azul_principal);
+    border-color: var(--color_botones_2);
     font-family: 'Lato', sans-serif;
 }
 
