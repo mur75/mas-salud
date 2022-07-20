@@ -67,6 +67,7 @@ h4{
     width: 100%;
     margin: 10px 0;
     padding: 3px;
+    background-color: var(--color_fondo_formulario);
 }   
 
 .img-captcha{
@@ -134,4 +135,4 @@ span{
 button:hover{
     background-color: var(--color_azul_principal);
     font-weight: bold;
-
+}
