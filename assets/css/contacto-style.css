@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@600&family=Lato&display=swap');
+
+:root {
+    /* --tipografia_titulos_bold:'Archivo Black'; font-size: 12px;color: #0077F0; */
+    /* --tipografia_titulos_sencillos:'Archivo'; font-size: 12px;color: #f00000; */
+    --color_azul_principal: #0077F0;
+    --color_botones: #1C65AA;
+    --color_botones_2: #46B0EF;
+    --color_fondo_formulario: #E1FDFE;
+    --color_textos:#6E6E6E;
+    --color_textos_2:#33C0E5;
+    --color_texto_body: #ffffff; 
+}
+.body-contactos{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 0 150px;
+    padding: 30px 90px 0;
+    font-family: 'Archivo';
+}
+.formulario{
+    background: var(--color_azul_principal);
+    padding: 15px;
+}
+.formulario input{
+    background: var(--color_fondo_formulario);
+    border: none;
+    width: 99%;
+}
+.formulario h5{
+    color: var(--color_texto_body);
+    margin: 5px 0;
+}
+.container2{
+    margin-left: 20px;
+}
+.container2 h3, .container2 p{
+    color: var(--color_textos);
+    font-size: .8rem;
+
+}
+.ultimo-input{
+    height: 160px;
+    text-align: center;
+}
+.btn-enviar{
+    margin: 15px 0 50px 0;
+    width: 100%;
+    height: 40px;
+    background: var(--color_botones_2);
+    color: var(--color_texto_body);
+    border: none;
+}
+.img-contactos{
+    width: 375px;
+}
+.seccion-mapa{
+    margin-top:60px;
+}
