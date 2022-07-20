@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@600&family=Lato&display=swap');
+
+:root {
+    /* --tipografia_titulos_bold:'Archivo Black'; font-size: 12px;color: #0077F0; */
+    /* --tipografia_titulos_sencillos:'Archivo'; font-size: 12px;color: #f00000; */
+    --color_azul_principal: #0077F0;
+    --color_botones: #1C65AA;
+    --color_botones_2: #46B0EF;
+    --color_fondo_formulario: #E1FDFE;
+    --color_textos:#6E6E6E;
+    --color_textos_2:#33C0E5;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background: #ffffff;
+    font-family: 'Archivo', sans-serif; 
+}
+
+.oficina{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo-oficina-virtual{
+    background: var(--color_azul_principal);
+    color: #fff;
+    font-size:90%;
+    text-align: center;
+    font-family: 'Archivo', sans-serif; 
+    border: 1px solid #1c65aa;
+    width: 430px;
+    position: relative;
+    padding: 10px;
+    
+}
+
+.oficina_virtual {
+    width: 430px;  
+    background: #ffffff;
+    color: #6E6E6E;
+    display: flex;
+    flex-direction: column; 
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #1c65aa;
+    padding: 20px;
+    font-size: 15px;
+}
+
+.usuario, .contraseña{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+label{
+    display: flex;
+    justify-content: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+label, input{
+    margin: 10px;
+    
+}
+
+input{
+    padding: 7px;
+    background-color: var(--color_fondo_formulario);
+}
+
+button{
+    background-color: var(--color_botones);
+    border: 1px solid;
+    border-radius: 20px;
+    border-color: var(--color_botones);
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    width: 100%; 
+}
+button:hover{     
+    background-color: var(--color_azul_principal);     
+    font-weight: bold; }
+
+.recordar-datos{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+}
+
+.olvide-contraseña{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 20px;
+    color: var(--color_azul_principal);
+    font-size: 18px;
+}
+
+.pie {
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+    margin-top: 30px;
+    font-family: 'Lato', sans-serif;
+    border: 1px solid;
+    border-color: #fff;
+    color: var(--color_textos);
+    background-color: #f1efef;
+    width: 80%;
+    background: linear-gradient(to bottom, #b8b8b8, #fff);
+}
+
+
+
+
+
+
