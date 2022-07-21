@@ -34,7 +34,6 @@ body {
 
 .menu{
     height: 90px;
-    /* background-color: #ffffff;opacity: 0.2; */
     display: grid;
     grid-template-columns: repeat(2,50%);
     align-items: center;
@@ -46,11 +45,13 @@ body {
 .menu a {
     font-family: 'Archivo';
     font-size: 19px; color: #ffffff;
-    /* letter-spacing: 1px; */
     text-shadow: 1px 1px 2px #7e7e7e;
     text-decoration: none;
     padding: 0px 15px;
 }
+
+
+
 
 .logo_menu{
     display: flex;
@@ -64,13 +65,18 @@ body {
     justify-content: flex-start;
 }
 
+.menu_items{
+    display: flex;
+    justify-content: end;
+}
+
 .textos_nav{
     display: grid;
     grid-template-columns: repeat(2, 50%);
     padding: 130px 120px;
 }
 
-.titulos_bold {
+.titulos_bold{
 /* font-family: var(--tipografia_titulos_bold); */
 font-family: 'Archivo Black', sans-serif; color: var(--color_azul_principal); font-size: 60px;
 line-height: 55px;
@@ -94,8 +100,13 @@ margin: 30px 0px;
     text-align: center;
     border: none;
     border-radius: 4px;
-    background-color: var(--color_azul_principal);
+    background-color:var(--color_botones);
     transition: all 200ms;
+    margin-top: 15px    ;
+}
+
+.boton:hover{
+    background-color: var(--color_azul_principal);
 }
 .banner-home,.body-home{
     display: flex;
@@ -117,6 +128,12 @@ margin: 30px 0px;
 .banner-home h2{
     margin-right: 20px;
     text-align: right;
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+
+.banner-home p{
+    padding-bottom: 20px;
 }
 .img-body{
     margin-right: 150px;
@@ -124,12 +141,22 @@ margin: 30px 0px;
 .texto-body{
     margin-right: 100px;
 }
-.texto-body h2, .texto-body p{
+.texto-body h2 {
     font-family: 'Archivo Black';
     margin-bottom: 10px;
+    font-size: 40px;
+    color: var(--color_textos);
+}
+
+.texto-body p{
+    margin-bottom: 10px;
+    font-family: 'Archivo', sans-serif;
+    color: var(--color_textos);    
 }
 .lista{
     list-style: none;
+    font-family: 'Lato', sans-serif;
+    color: var(--color_textos);
 }
 .fa-solid{
     color: var(--color_azul_principal);
@@ -137,11 +164,21 @@ margin: 30px 0px;
     font-size: .6rem;
 }
 .btn-body-home{
-    margin: 40px 0 0;
-    background: var(--color_azul_principal);
-    color: var(--color_texto_body);
-    padding: 10px 20px;
-    border: none;
+    background-color: var(--color_botones);
+    border: 1px solid;
+    border-radius: 8px;
+    border-color: var(--color_botones);
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff; 
+    margin-top: 20px;
+    
+}
+
+    .btn-body-home:hover{
+        background-color: var(--color_azul_principal);
+        font-weight: bold;
 }
 .linea_footer {
     border-bottom:solid 6px var(--color_azul_principal);

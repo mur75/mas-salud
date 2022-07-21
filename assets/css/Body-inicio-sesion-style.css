@@ -16,10 +16,10 @@
     padding: 0%;
     box-sizing: border-box;
 }
-body{
+/*body{
     background: #ffffff;
     font-family: 'Archivo', sans-serif; 
-}
+}*/
 .logo{
     padding: 20px;
     margin-left: 40px;
@@ -45,6 +45,8 @@ body{
     padding: 5px;  
     display: grid;
     grid-template-rows: 10px;
+    font-family: 'Archivo', sans-serif;
+    font-size:20px;
 }
 
 .oficina_virtual {
@@ -72,6 +74,7 @@ label{
     display: flex;
     flex-direction: row;
     align-items: center;
+    font-family: 'Lato', sans-serif;
 }
 
 label, input{
@@ -112,7 +115,8 @@ button:hover{
     margin: 20px;
     color: var(--color_azul_principal);
     font-weight: bold; 
-    font-size: 18px;    
+    font-size: 18px; 
+    font-family: 'Lato', sans-serif;   
 }
 
 .pie {
