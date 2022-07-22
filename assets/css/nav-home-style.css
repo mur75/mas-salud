@@ -9,6 +9,7 @@
     --color_fondo_formulario: #E1FDFE;
     --color_textos:#6E6E6E;
     --color_textos_2:#33C0E5;
+    --color_texto_body: #ffffff; 
 }
 
 *{
@@ -18,13 +19,13 @@
 }
 body {
     font-family: 'Archivo';
+    /* background-size: cover; */
 }
 
 .fondo_nav{
     height: 650px;
-    background-color: #a3a3a3;
     background-image: url(foto_nav_home);
-    background-size: cover;
+    /* background-color: #a3a3a3; */
     /* COMO HAGO PARA PONERLE LA RUTA DESDE OTRA CARPETA QUE NO SEA CSS
     hacer una ruta como esta_  cover; assets/img/fotos/foto_nav_home
     proba estas propiedades
@@ -37,12 +38,10 @@ body {
     display: grid;
     grid-template-columns: repeat(2,50%);
     align-items: center;
+    position: relative;
+    z-index: 2;
 }
 
-/* .fondo_menu{
-    height: 90px;
-    background-color: #ffffff;
-} */
 
 .menu a {
     font-family: 'Archivo';
@@ -79,7 +78,6 @@ margin: 30px 0px;
 }
 
 .comentario_titulos {
-    /* font-family: var(--tipografia_titulos_bold); */
     font-family: 'Archivo', sans-serif; color: var(--color_textos); font-size: 25px;
     margin: 35px 0px;
     }
@@ -99,7 +97,52 @@ margin: 30px 0px;
     background-color: var(--color_azul_principal);
     transition: all 200ms;
 }
-
+.banner-home,.body-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body-home{
+    margin: 30px 25px;
+    
+}
+.banner-home{
+    background: var(--color_azul_principal);/*Cambiar por una imagen*/
+    padding: 60px 150px;
+    color: var(--color_texto_body);
+    font-family: 'Archivo Black';
+    height: 285px;
+    background-image: url(banner_body.png);
+}
+.banner-home h2{
+    margin-right: 20px;
+    text-align: right;
+}
+.img-body{
+    margin-right: 150px;
+}
+.texto-body{
+    margin-right: 100px;
+}
+.texto-body h2, .texto-body p{
+    font-family: 'Archivo Black';
+    margin-bottom: 10px;
+}
+.lista{
+    list-style: none;
+}
+.fa-solid{
+    color: var(--color_azul_principal);
+    margin-right: 10px;
+    font-size: .6rem;
+}
+.btn-body-home{
+    margin: 40px 0 0;
+    background: var(--color_azul_principal);
+    color: var(--color_texto_body);
+    padding: 10px 20px;
+    border: none;
+}
 .linea_footer {
     border-bottom:solid 6px var(--color_azul_principal);
     width:100%;
@@ -145,4 +188,21 @@ padding: 0px 10px;
 
 .logos_redes img {
     height: 34px;
+}
+
+.fondo-opaco{
+    width: 100%;
+    height: 90px;
+    /* height: 21vh; */
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    /* filter: opacity(0.5); */
+    opacity: 0.5;
+}
+
+.menu{
+    position: relative;
+    z-index: 2;
 }
