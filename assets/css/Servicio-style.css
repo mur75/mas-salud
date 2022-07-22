@@ -17,10 +17,6 @@
     padding: 0%;
     box-sizing: border-box;
 }
-body{
-    background: #ffffff;
-    font-family: 'Archivo', sans-serif; 
-}
 
 .servicios{
     margin: 50px;
@@ -34,18 +30,11 @@ body{
     justify-content: center;
 }
 
-.como_acceder, .asesor_oficina_linea,.Medicamentos, .citas_medicas, .plan_premium, .solicitud_autorizaciones, .consulta_resultados, .laboratorios  {
-    padding: 8px;
-    border: 0.4px solid;
-    border-radius: 5%;
-    
-}
-.acceso, .asesor, .citas, .plan, .solicitud, .consulta_resul, .lab, .medi_ {
-    padding: 8px;
-    color: var(--color_textos_2);
+.como_acceder, .asesor_oficina_linea, .Medicamentos, .citas_medicas, .plan_premium, .solicitud_autorizaciones, 	.consulta_resultados, .laboratorios{
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
+<<<<<<< HEAD
     margin-left: 20px;
     
 }
@@ -68,16 +57,17 @@ body{
 }
 .servicios button{
     background-color: var(--color_botones);
+=======
+    flex-direction: column;
+    text-align: center;
+>>>>>>> master
     border: 1px solid;
-    border-radius: 20px;
-    border-color: var(--color_botones);
+    border-radius: 16px;
     padding: 10px;
-    color: #fff;
-    width: 30%; 
-    margin-left: 84px;  
+    border-color: var(--color_textos);
 }
-button:hover{   
 
+<<<<<<< HEAD
     background-color: var(--color_botones_2);     
     font-weight: bold; }
 
@@ -103,3 +93,37 @@ button:hover{
         border-radius: 8px;
         
     }
+=======
+.servicios span{
+    font-family: 'Archivo', sans-serif;
+    margin: 10px;
+    font-size: 16px;
+}
+
+.servicios p{
+    font-family: 'Lato', sans-serif;
+    margin: 10px;
+    color: var(--color_textos);
+}
+
+.servicios button{
+        background-color: var(--color_botones);
+        border: 1px solid;
+        border-radius: 8px;
+        border-color: var(--color_botones);
+        padding: 10px;
+        font-size: 15px;
+        font-weight: 500;
+        color: #fff;
+        width: 50%; 
+        margin-top: 10px;
+}
+
+button:hover{
+    background-color: var(--color_azul_principal);
+    font-weight: bold;
+}
+.servicios img{
+    width: 60px;
+}
+>>>>>>> master
