@@ -9,6 +9,7 @@
     --color_fondo_formulario: #E1FDFE;
     --color_textos:#6E6E6E;
     --color_textos_2:#33C0E5;
+    --color_texto_body: #ffffff;
 }
 
 *{
@@ -56,7 +57,7 @@ body{
     margin-left: 35px;
 }
 
-p{
+.servicios p{
     color: #6E6E6E;
     display: flex;
     justify-content: center; 
@@ -65,7 +66,7 @@ p{
     padding: 10px;
     text-align: center;
 }
-button{
+.servicios button{
     background-color: var(--color_botones);
     border: 1px solid;
     border-radius: 20px;
@@ -77,5 +78,28 @@ button{
 }
 button:hover{   
 
-    background-color: var(--color_azul_principal);     
+    background-color: var(--color_botones_2);     
     font-weight: bold; }
+
+    .banner-servicios{
+        padding: 190px 875px 0 150px;
+        color: var(--color_texto_body);
+        background-image: url(foto_servicios.png);
+        font-family:'Archivo', sans-serif;
+        text-align: left;
+    }
+    .banner-servicios p, h3{
+        text-align: left;
+        margin: 10px 0;
+    }
+    .banner-servicios h3{
+        font-size: 2rem;
+    }
+    .banner-boton{
+        background-color: var(--color_botones);
+        border: none;
+        color: var(--color_texto_body);
+        padding: 10px 20px;
+        border-radius: 8px;
+        
+    }
