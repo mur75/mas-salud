@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@600&family=Lato&display=swap');
+
+:root {
+    /* --tipografia_titulos_bold:'Archivo Black'; font-size: 12px;color: #0077F0; */
+    /* --tipografia_titulos_sencillos:'Archivo'; font-size: 12px;color: #f00000; */
+    --color_azul_principal: #0077F0;
+    --color_botones: #1C65AA;
+    --color_botones_2: #46B0EF;
+    --color_fondo_formulario: #E1FDFE;
+    --color_textos:#6E6E6E;
+    --color_textos_2:#33C0E5;
+    --color_texto_body: #ffffff;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.animacion_uno{
+    animation: bounceIn; 
+    animation-duration: 3s; 
+}
+
+.servicios{
+    margin: 50px;
+    padding: 30px;
+    background: #ffff;
+    font-size: 14px;
+    display: grid;
+    grid-template-columns:20% 20% 20% 20%;
+    grid-template-rows: 50% 50%;
+    grid-gap: 50px 30px;
+    justify-content: center;
+}
+
+.como_acceder, .asesor_oficina_linea, .Medicamentos, .citas_medicas, .plan_premium, .solicitud_autorizaciones, 	.consulta_resultados, .laboratorios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 16px;
+    padding: 10px;
+    border-color: var(--color_textos);
+    
+}
+
+.servicios span{
+    font-family: 'Archivo', sans-serif;
+    margin: 10px;
+    font-size: 16px;
+}
+
+
+.servicios p{
+    font-family: 'Lato', sans-serif;
+    margin: 10px;
+    color: var(--color_textos);
+    
+}
+
+.servicios button{
+        background-color: var(--color_botones);
+        border: 1px solid;
+        border-radius: 8px;
+        border-color: var(--color_botones);
+        padding: 10px;
+        font-size: 15px;
+        font-weight: 500;
+        color: #fff;
+        width: 50%; 
+        margin-top: 10px;
+        animation: flipInY; 
+        animation-duration: 3s; 
+}
+
+button:hover{
+    background-color: var(--color_azul_principal);
+    font-weight: bold;
+}
+.servicios img{
+    width: 60px;
+}
+
+.banner-servicios{
+    padding: 150px 870px 70px 150px;
+    color: var(--color_texto_body);
+    background-image: url(foto_servicios.png);
+    font-family:'Archivo', sans-serif;
+    text-align: left;
+}
+.banner-servicios p, h3{
+    text-align: left;
+    margin: 10px 0;
+}
+.banner-servicios h3{
+    font-size: 2rem;
+}
+.banner-boton{
+    background-color: var(--color_botones);
+    border: none;
+    color: var(--color_texto_body);
+    padding: 10px 20px;
+    border-radius: 8px;
+}
