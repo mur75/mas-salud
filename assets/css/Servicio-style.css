@@ -18,6 +18,11 @@
     box-sizing: border-box;
 }
 
+.animacion_uno{
+    animation: bounceIn; 
+    animation-duration: 3s; 
+}
+
 .servicios{
     margin: 50px;
     padding: 30px;
@@ -40,6 +45,7 @@
     border-radius: 16px;
     padding: 10px;
     border-color: var(--color_textos);
+    
 }
 
 .servicios span{
@@ -48,10 +54,12 @@
     font-size: 16px;
 }
 
+
 .servicios p{
     font-family: 'Lato', sans-serif;
     margin: 10px;
     color: var(--color_textos);
+    
 }
 
 .servicios button{
@@ -65,6 +73,8 @@
         color: #fff;
         width: 50%; 
         margin-top: 10px;
+        animation: flipInY; 
+        animation-duration: 3s; 
 }
 
 button:hover{
