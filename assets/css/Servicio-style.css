@@ -9,12 +9,18 @@
     --color_fondo_formulario: #E1FDFE;
     --color_textos:#6E6E6E;
     --color_textos_2:#33C0E5;
+    --color_texto_body: #ffffff;
 }
 
 *{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+}
+
+.animacion_uno{
+    animation: bounceIn; 
+    animation-duration: 3s; 
 }
 
 .servicios{
@@ -39,6 +45,7 @@
     border-radius: 16px;
     padding: 10px;
     border-color: var(--color_textos);
+    
 }
 
 .servicios span{
@@ -47,10 +54,12 @@
     font-size: 16px;
 }
 
+
 .servicios p{
     font-family: 'Lato', sans-serif;
     margin: 10px;
     color: var(--color_textos);
+    
 }
 
 .servicios button{
@@ -64,6 +73,8 @@
         color: #fff;
         width: 50%; 
         margin-top: 10px;
+        animation: flipInY; 
+        animation-duration: 3s; 
 }
 
 button:hover{
@@ -75,7 +86,7 @@ button:hover{
 }
 
 .banner-servicios{
-    padding: 190px 875px 0 150px;
+    padding: 150px 870px 70px 150px;
     color: var(--color_texto_body);
     background-image: url(foto_servicios.png);
     font-family:'Archivo', sans-serif;
