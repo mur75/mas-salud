@@ -27,11 +27,12 @@
     text-shadow: 1px 1px 2px #7e7e7e;
     text-decoration: none;
     padding: 0px 15px;
-}*/
+}
 
 .nombre_seccion {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
+    /* height: auto; */
     margin-top: 15px;
     padding: 0px 200px;
 }
@@ -154,4 +155,116 @@ padding: 0px 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+@media(max-width: 992px){
+
+    /* RESPONSIVE - NAV- -----------------------------------------------------------  */
+
+    .fondo_nav_banner{
+        height: auto;
+        background-image: url(foto_nav_secciones.png);
+        background-size: cover;
+    }  
+
+    .logo_nav {
+        height: 25px !important;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px 0px 0px 5px;
+    }
+    
+    .menu_items {
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffff2e;
+        align-items: flex-start;
+        margin-top: 9px;
+    }
+
+    .menu a {
+        font-size: 15px;
+        padding: 11px 14px;
+    }
+    
+    .nombre_seccion {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+        padding: 0px 5px;
+    }
+    
+    .nombre_seccion h2 {
+        font-family: 'Archivo Black', sans-serif;
+        color: #ffffff;
+        font-size: 36px;
+        font-weight: 100;
+        text-align: center;
+        letter-spacing: 1px;
+        margin: 12px 0px 0px 0px;
+    }
+    .comentario_titulos_blanco {
+        font-family: 'Lato', sans-serif;
+        color: #ffffff;
+        font-size: 15px;
+        text-align: center;
+        padding-block: 16px;
+    }
+
+ /* RESPONSIVE - FOOTER- ------------------------------------------------------  */
+
+    .footer_logo_datos {
+        height: auto;
+        flex-direction: column;
+        font-size: 12px;
+        }  
+
+    .footer_logo_datos  div {
+        margin: 15px 0px 1px 1px;
+        }  
+    
+    .logo_footer {
+        width: auto;
+        height: auto !important;
+        align-content: center;
+    }
+
+    .logo_footer, .logos_redes_tam {
+        height: 20px !important;
+    }
+
+    .iconos_footer {
+        width: 16px;
+    }
+    
+    .boton_tel {
+        padding: 0px 12px;
+        height: auto;
+        font-size: 18px;
+        margin: 15px 0px 1px 1px;
+    }
+    
+    .direccion, .horario {
+        margin-left: -50px !important;
+    }
+
+    .footer_redes {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        font-family:'sans-serif'; color: var(--color_textos); font-size: 10px;
+    }
+
+    .footer_redes div {
+        margin: 5px 1px;
+        }
+
+    .logo_diseno {
+        display: none;
+    }
+
 }
