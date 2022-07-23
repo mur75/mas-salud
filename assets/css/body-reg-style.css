@@ -17,6 +17,11 @@
     box-sizing: border-box;
 }
 
+.animacion_tres{
+    animation: zoomIn; 
+    animation-duration: 2s; 
+}
+
 .container-registro{
     display: flex;
     flex-direction: column;
