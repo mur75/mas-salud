@@ -11,6 +11,13 @@
     --color_textos_2:#33C0E5;
     --color_texto_body: #ffffff; 
 }
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
 .animacion_dos{
     animation: flip; 
     animation-duration: 2s; 

@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@600&family=Lato&display=swap');
 
 :root {
-    /* --tipografia_titulos_bold:'Archivo Black'; font-size: 12px;color: #0077F0; */
-    /* --tipografia_titulos_sencillos:'Archivo'; font-size: 12px;color: #f00000; */
+    
     --color_azul_principal: #0077F0;
     --color_botones: #1C65AA;
     --color_botones_2: #46B0EF;

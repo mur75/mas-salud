@@ -157,9 +157,16 @@ padding: 0px 10px;
     align-items: center;
 }
 
+    /* RESPONSIVE - NAV- -----------------------------------------------------------  */
+    
 @media(max-width: 992px){
 
-    /* RESPONSIVE - NAV- -----------------------------------------------------------  */
+    .fondo_nav{
+        height: auto;
+        background-image: url(foto_nav_home);
+        background-size: cover;
+        padding: 25px;
+    }
 
     .fondo_nav_banner{
         height: auto;
@@ -190,6 +197,28 @@ padding: 0px 10px;
         font-size: 15px;
         padding: 11px 14px;
     }
+
+    .textos_nav {
+        display: flex;
+        flex-direction: row;
+        padding: 0px 70px;
+    }
+
+    .titulos_bold{
+        font-family: 'Archivo Black', sans-serif;
+        color: var(--color_azul_principal);
+        font-size: 25px;
+        line-height: 1;
+        animation: zoomInDown;
+        animation-duration: 1.5s;
+    }
+
+    .comentario_titulos {
+        font-family: 'Archivo', sans-serif;
+        color: var(--color_textos);
+        font-size: 15px;
+        margin: -3px 0px;
+        }
     
     .nombre_seccion {
         display: flex;
@@ -213,6 +242,21 @@ padding: 0px 10px;
         font-size: 15px;
         text-align: center;
         padding-block: 16px;
+    }
+
+    .boton {
+        width: 100px;
+        height: 35px;
+        display: inline-block;
+        font-family: 'Archivo', sans-serif;
+        font-size: 13px;
+        color: #ffffff;
+        text-align: center;
+        border: none;
+        border-radius: 4px;
+        background-color: var(--color_botones);
+        transition: all 200ms;
+        margin-top: 15px;
     }
 
  /* RESPONSIVE - FOOTER- ------------------------------------------------------  */
