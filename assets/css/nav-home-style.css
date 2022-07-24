@@ -252,6 +252,19 @@ padding: 0px 10px;
     .img-body{
         margin-right: 10px
     }
+}
+
+@media (min-width: 768px){
+    .banner-home h2{
+            font-size: 20px;
+    }
+    .banner-home p{
+        font-size: 15px;
+}
+
+    .img-body{
+        margin-right: 10px
+    }
 
 }
 
