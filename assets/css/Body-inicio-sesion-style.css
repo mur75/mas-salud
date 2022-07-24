@@ -126,7 +126,21 @@ button:hover{
     background-color: #f1efef;
     width: 80%;
     background: linear-gradient(to bottom, #b8b8b8, #fff);
+    text-align: center;
 }
+
+/*responsive body inicio de sesión*/
+@media (min-width: 992px){
+    .oficina_virtual {
+            padding: 10px;
+    }
+}
+
+.pie {
+    text-align: center;
+}
+
+
 
 
 

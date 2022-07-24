@@ -94,3 +94,10 @@ form {
 .seccion-mapa{
     margin-top:60px;
 }
+
+/*responsive body contacto*/
+@media (min-width: 992px){
+    .body-contactos{
+        margin: 0 10px;
+    }
+}

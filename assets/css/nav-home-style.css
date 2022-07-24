@@ -242,3 +242,18 @@ padding: 0px 10px;
     position: relative;
     z-index: 2;
 }
+
+/*resonsive body*/
+@media (min-width: 992px){
+    .banner-home h2{
+            font-size: 25px;
+    }
+
+    .img-body{
+        margin-right: 10px
+    }
+
+}
+
+
+
