@@ -50,9 +50,6 @@ body {
     padding: 0px 15px;
 }
 
-
-
-
 .logo_menu{
     display: flex;
     flex-direction: row;
@@ -81,6 +78,8 @@ body {
 font-family: 'Archivo Black', sans-serif; color: var(--color_azul_principal); font-size: 60px;
 line-height: 55px;
 margin: 30px 0px;
+animation: zoomInDown; 
+animation-duration: 1.5s; 
 }
 
 .comentario_titulos {

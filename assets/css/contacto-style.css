@@ -11,6 +11,18 @@
     --color_textos_2:#33C0E5;
     --color_texto_body: #ffffff; 
 }
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.animacion_dos{
+    animation: flip; 
+    animation-duration: 2s; 
+}
+
 .body-contactos{
     display: grid;
     grid-template-columns: 50% 50%;
@@ -41,6 +53,8 @@ form {
 .container1 h1, .container2 h1{
     font-family: 'Archivo', sans-serif;
     color: var(--color_azul_principal);
+    animation: flipInY; 
+    animation-duration: 3s; 
 }
 .container2{
     margin-left: 20px;

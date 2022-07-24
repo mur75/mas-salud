@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@600&family=Lato&display=swap');
 
 :root {
-    
     --color_azul_principal: #0077F0;
     --color_botones: #1C65AA;
     --color_botones_2: #46B0EF;
@@ -28,11 +27,12 @@
     text-shadow: 1px 1px 2px #7e7e7e;
     text-decoration: none;
     padding: 0px 15px;
-}*/
+}
 
 .nombre_seccion {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
+    /* height: auto; */
     margin-top: 15px;
     padding: 0px 200px;
 }
@@ -67,8 +67,6 @@
     justify-content: flex-start;
 }
 
-
-
 .linea_footer {
     border-bottom:solid 6px var(--color_azul_principal);
     width:100%;
@@ -94,6 +92,26 @@ footer{
 padding: 0px 60px;
 }
 
+.grupo_direccion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+} 
+
+.grupo_horario {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+} 
+
+.horario {
+    margin-left: -50px;
+}
+
+.direccion {
+    margin-left: -50px;
+}
+
 .footer_redes {
     height: 100px;
     display: flex;
@@ -114,4 +132,183 @@ padding: 0px 10px;
 
 .logos_redes img {
     height: 34px;
+}
+
+.boton_tel{
+    width: 200px;
+    height: 45px;
+    background-color: #ffffff;
+    border: solid;
+    border-color: #0077F0;
+    border-width: 2px;
+    display: flex;
+    flex-direction: row;
+    font-size: 22px;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.diseno {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+    /* RESPONSIVE - NAV- -----------------------------------------------------------  */
+    
+@media(max-width: 992px){
+
+    .fondo_nav{
+        height: auto;
+        background-image: url(foto_nav_home);
+        background-size: cover;
+        padding: 25px;
+    }
+
+    .fondo_nav_banner{
+        height: auto;
+        background-image: url(foto_nav_secciones.png);
+        background-size: cover;
+    }  
+
+    .logo_nav {
+        height: 25px !important;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px 0px 0px 5px;
+    }
+    
+    .menu_items {
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffff2e;
+        align-items: flex-start;
+        margin-top: 9px;
+    }
+
+    .menu a {
+        font-size: 15px;
+        padding: 11px 14px;
+    }
+
+    .textos_nav {
+        display: flex;
+        flex-direction: row;
+        padding: 0px 70px;
+    }
+
+    .titulos_bold{
+        font-family: 'Archivo Black', sans-serif;
+        color: var(--color_azul_principal);
+        font-size: 25px;
+        line-height: 1;
+        animation: zoomInDown;
+        animation-duration: 1.5s;
+    }
+
+    .comentario_titulos {
+        font-family: 'Archivo', sans-serif;
+        color: var(--color_textos);
+        font-size: 15px;
+        margin: -3px 0px;
+        }
+    
+    .nombre_seccion {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+        padding: 0px 5px;
+    }
+    
+    .nombre_seccion h2 {
+        font-family: 'Archivo Black', sans-serif;
+        color: #ffffff;
+        font-size: 36px;
+        font-weight: 100;
+        text-align: center;
+        letter-spacing: 1px;
+        margin: 12px 0px 0px 0px;
+    }
+    .comentario_titulos_blanco {
+        font-family: 'Lato', sans-serif;
+        color: #ffffff;
+        font-size: 15px;
+        text-align: center;
+        padding-block: 16px;
+    }
+
+    .boton {
+        width: 100px;
+        height: 35px;
+        display: inline-block;
+        font-family: 'Archivo', sans-serif;
+        font-size: 13px;
+        color: #ffffff;
+        text-align: center;
+        border: none;
+        border-radius: 4px;
+        background-color: var(--color_botones);
+        transition: all 200ms;
+        margin-top: 15px;
+    }
+
+ /* RESPONSIVE - FOOTER- ------------------------------------------------------  */
+
+    .footer_logo_datos {
+        height: auto;
+        flex-direction: column;
+        font-size: 12px;
+        }  
+
+    .footer_logo_datos  div {
+        margin: 15px 0px 1px 1px;
+        }  
+    
+    .logo_footer {
+        width: auto;
+        height: auto !important;
+        align-content: center;
+    }
+
+    .logo_footer, .logos_redes_tam {
+        height: 20px !important;
+    }
+
+    .iconos_footer {
+        width: 16px;
+    }
+    
+    .boton_tel {
+        padding: 0px 12px;
+        height: auto;
+        font-size: 18px;
+        margin: 15px 0px 1px 1px;
+    }
+    
+    .direccion, .horario {
+        margin-left: -50px !important;
+    }
+
+    .footer_redes {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        font-family:'sans-serif'; color: var(--color_textos); font-size: 10px;
+    }
+
+    .footer_redes div {
+        margin: 5px 1px;
+        }
+
+    .logo_diseno {
+        display: none;
+    }
+
 }
