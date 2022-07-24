@@ -50,7 +50,7 @@
 }
 
 .items:hover {
-    background-color: rgba(31, 158, 255, 0.44);
+    background-color: var(--color_botones_2);
     transition:  0.5s;
 }
 
@@ -96,98 +96,6 @@
     justify-content: flex-start;
 }
 
-/* FOOTER ------------------------------------------------------------------  */
-
-.linea_footer {
-    border-bottom:solid 6px var(--color_azul_principal);
-    width:100%;
-    margin: 30px 0px 20px 0px;   
-}
-
-footer{
-    height: 200px;
-    background-color: #ffffff;
-}
-
-.footer_logo_datos {
-    height: 70px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff;
-    font-family:'Archivo'; color: var(--color_textos); font-size: 14px; font-weight: 100;
-}
-
-.footer_logo_datos div {
-padding: 0px 60px;
-}
-
-.grupo_direccion {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-} 
-
-.grupo_horario {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-} 
-
-.horario {
-    margin-left: -50px;
-}
-
-.direccion {
-    margin-left: -50px;
-}
-
-.footer_redes {
-    height: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    font-family:'sans-serif'; color: var(--color_textos); font-size: 14px;
-}
-
-.footer_redes div {
-padding: 0px 10px;
-}
-
-.logos_redes {
-    display: flex;
-    flex-direction: row;
-}
-
-.logos_redes img {
-    height: 34px;
-}
-
-.boton_tel{
-    width: 200px;
-    height: 45px;
-    background-color: #ffffff;
-    border: solid;
-    border-color: #0077F0;
-    border-width: 2px;
-    display: flex;
-    flex-direction: row;
-    font-size: 22px;
-    color: #000000;
-    font-weight: bold;
-    text-align: center;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.diseno {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
     /* RESPONSIVE - NAV- -----------------------------------------------------------  */
     
 @media(max-width: 992px){
@@ -196,6 +104,7 @@ padding: 0px 10px;
         height: auto;
         background-image: url(foto_nav_home);
         background-size: cover;
+        padding: 25px;
     }
 
     .fondo_nav_banner{
@@ -204,10 +113,6 @@ padding: 0px 10px;
         background-size: cover;
     }  
 
-    .logo_nav {
-        height: 25px !important;
-    }
-
     .menu {
         display: flex;
         flex-direction: column;
@@ -215,18 +120,10 @@ padding: 0px 10px;
         padding: 12px 0px 0px 5px;
     }
     
-    .menu_items {
-        display: flex;
-        flex-direction: column;
-        background-color: #ffffff2e;
-        align-items: flex-start;
-        margin-top: 25px;
-    }
-
     .menu a {
         font-size: 15px;
         padding: 11px 14px;
-    }
+    } 
 
     .textos_nav {
         display: flex;
@@ -333,62 +230,6 @@ padding: 0px 10px;
         background-color: #ffffff2e;
         margin-top: 25px;
         padding: 4px 25px;
-    }
-    }
-}
-
- /* RESPONSIVE - FOOTER- ------------------------------------------------------  */
- 
-@media(max-width: 992px){
-
-    .footer_logo_datos {
-        height: auto;
-        flex-direction: column;
-        font-size: 12px;
-        }  
-
-    .footer_logo_datos  div {
-        margin: 15px 0px 1px 1px;
-        }  
-    
-    .logo_footer {
-        width: auto;
-        height: auto !important;
-        align-content: center;
-    }
-
-    .logo_footer, .logos_redes_tam {
-        height: 20px !important;
-    }
-
-    .iconos_footer {
-        width: 16px;
-    }
-    
-    .boton_tel {
-        padding: 0px 12px;
-        height: auto;
-        font-size: 18px;
-        margin: 15px 0px 1px 1px;
-    }
-    
-    .direccion, .horario {
-        margin-left: -50px !important;
-    }
-
-    .footer_redes {
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        font-family:'sans-serif'; color: var(--color_textos); font-size: 10px;
-    }
-
-    .footer_redes div {
-        margin: 5px 1px;
         }
-
-    .logo_diseno {
-        display: none;
     }
 }
-
