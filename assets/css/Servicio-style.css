@@ -162,7 +162,7 @@ button:hover{
         font-size: 15px;        
     }*/
 
-    @media (max-width: 576px){
+    @media (max-width: 768px){
 
         .servicios{
             font-size: 14px;
@@ -186,7 +186,7 @@ button:hover{
     }
 }
 
-@media (max-width: 768px){
+/*@media (max-width: 768px){
 
     .servicios{
         font-size: 14px;
@@ -206,6 +206,6 @@ button:hover{
 .banner-servicios p{
     inline-size: 40%;    
 }
-}
+}*/
 
 
