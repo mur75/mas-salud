@@ -15,6 +15,10 @@
     background-image: url(foto_nav_secciones.png);
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .menu{
     height: 90px;
     display: grid;

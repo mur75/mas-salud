@@ -18,6 +18,10 @@
     box-sizing: border-box;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 .animacion_uno{
     animation: bounceIn; 
     animation-duration: 3s; 
@@ -106,3 +110,59 @@ button:hover{
     padding: 10px 20px;
     border-radius: 8px;
 }
+
+/*resonsive body servicios*/
+@media (max-width: 992px){
+
+        .servicios{
+        
+            font-size: 12px;
+            display: grid;
+            grid-template-columns:50% 50%;
+            grid-template-rows: auto;
+            grid-gap: 10px 5px;
+        }
+    }
+
+    .banner-servicios{
+        padding: 50px 430px 35px 70px;
+        background-size: cover;
+        font-family:'Archivo', sans-serif;
+        text-align: left;
+    }
+
+    .banner-servicios h3{
+        font-size: 25px;
+        margin-top: 20px;
+    }
+    .banner-servicios p{
+        font-family: 'Lato', sans-serif;
+        font-size: 15px;        
+    }
+
+
+
+    @media (max-width: 768px){
+
+        .servicios{
+            font-size: 14px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .banner-servicios{
+            padding: 50px 0px 35px 70px;
+            background-size: cover;
+            font-family:'Archivo', sans-serif;
+            text-align: left;
+        }
+
+    .banner-servicios p{
+        font-family: 'Lato', sans-serif;
+        font-size: 14px;
+        inline-size: 30%;    
+    }
+}
+
+
+

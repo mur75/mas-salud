@@ -20,11 +20,13 @@
 body {
     font-family: 'Archivo';
     /* background-size: cover; */
+    overflow-x: hidden;
 }
 
 .fondo_nav{
     height: 650px;
     background-image: url(foto_nav_home);
+    background-size: cover;
     /* background-color: #a3a3a3; */
     /* COMO HAGO PARA PONERLE LA RUTA DESDE OTRA CARPETA QUE NO SEA CSS
     hacer una ruta como esta_  cover; assets/img/fotos/foto_nav_home
@@ -49,9 +51,6 @@ body {
     text-decoration: none;
     padding: 0px 15px;
 }
-
-
-
 
 .logo_menu{
     display: flex;
@@ -245,3 +244,47 @@ padding: 0px 10px;
     position: relative;
     z-index: 2;
 }
+
+@media (max-width: 576px){
+    .banner-home h2{
+        font-size: 25px;
+}
+
+.body-home{
+    flex-direction: column;
+}
+
+.banner-home{
+    display: flex;
+    flex-direction: row;
+    padding: 18px 1px;
+}
+}
+
+@media (max-width: 768px){
+.banner-home h2{
+        font-size: 20px;
+}
+.banner-home p{
+    font-size: 15px;
+}
+
+.img-body{
+    margin-right: 1px
+}
+}
+
+@media (max-width: 992px){
+    .banner-home h2{
+            font-size: 20px;
+    }
+    .banner-home p{
+        font-size: 15px;
+    }
+    
+    .img-body{
+        margin-right: 1px
+    }
+    }
+
+
