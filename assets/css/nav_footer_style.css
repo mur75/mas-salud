@@ -231,7 +231,7 @@ padding: 0px 10px;
     .textos_nav {
         display: flex;
         flex-direction: row;
-        padding: 0px 70px;
+        padding: 34px 70px;
     }
 
     .titulos_bold{

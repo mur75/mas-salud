@@ -243,32 +243,6 @@ padding: 0px 10px;
     z-index: 2;
 }
 
-/*resonsive body*/
-
-/*@media (min-width: 992px){
-    .banner-home h2{
-            font-size: 25px;
-    }
-
-    .img-body{
-        margin-right: 10px
-    }
-}
-
-@media (min-width: 768px){
-    .banner-home h2{
-            font-size: 20px;
-    }
-    .banner-home p{
-        font-size: 15px;
-}
-
-    .img-body{
-        margin-right: 1px
-    }
-}
-*/
-
 @media (max-width: 576px){
     .banner-home h2{
         font-size: 25px;
@@ -280,13 +254,10 @@ padding: 0px 10px;
 
 .banner-home{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
+    flex-direction: row;
+    padding: 18px 1px;
 }
 }
-
 
 @media (max-width: 768px){
 .banner-home h2{

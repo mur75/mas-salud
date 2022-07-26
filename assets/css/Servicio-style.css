@@ -111,6 +111,11 @@ button:hover{
 @media (min-width: 992px){
 
         .servicios{
+
+            /* font-size: 12px;
+            display: flex;
+            flex-direction: column; */
+        
             font-size: 12px;
             display: grid;
             grid-template-columns:50% 50%;
@@ -166,10 +171,8 @@ button:hover{
 
         .servicios{
             font-size: 14px;
-            display: grid;
-            grid-template-columns:500px;
-            grid-template-rows: auto;
-            grid-gap: 10px 5px;
+            display: flex;
+            flex-direction: column;
         }
 
         .banner-servicios{
