@@ -325,6 +325,7 @@ padding: 0px 10px;
     .logo_menu {
         position: relative;
         height: 25px !important;
+        margin-top: 18px;
     }
 
     .items {
