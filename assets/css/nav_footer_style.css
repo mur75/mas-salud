@@ -29,6 +29,10 @@
     padding: 0px 15px;
 }
 
+button {
+    background-color: var(--color_botones);
+}
+
 .nombre_seccion {
     /* display: flex; */
     flex-direction: column;
