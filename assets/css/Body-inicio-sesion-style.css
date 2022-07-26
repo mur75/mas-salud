@@ -15,6 +15,10 @@
     box-sizing: border-box;
 }
 
+body {
+    Overflow-x: hidden 
+}
+
 .logo{
     padding: 20px;
     margin-left: 40px;

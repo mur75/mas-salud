@@ -16,6 +16,10 @@
     box-sizing: border-box;
 }
 
+body {
+    Overflow-x: hidden 
+}
+
 .animacion_tres{
     animation: zoomIn; 
     animation-duration: 2s; 

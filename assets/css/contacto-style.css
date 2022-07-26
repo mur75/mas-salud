@@ -18,6 +18,10 @@
     box-sizing: border-box;
 }
 
+body {
+    Overflow-x: hidden 
+}
+
 .animacion_dos{
     animation: flip; 
     animation-duration: 2s; 

@@ -15,6 +15,10 @@
     box-sizing: border-box;
 }
 
+body {
+    Overflow-x: hidden 
+}
+
 /* MENU DESPLEGABLE ------------------------------------------------------  */
 
 .fondo_nav_banner{
