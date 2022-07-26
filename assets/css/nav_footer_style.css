@@ -15,6 +15,10 @@
     box-sizing: border-box;
 }
 
+body {
+    Overflow-x: hidden;
+}
+
 /* MENU DESPLEGABLE ------------------------------------------------------  */
 
 .fondo_nav_banner{
@@ -29,6 +33,22 @@
     align-items: center;
 }
 
+.botones_menu {
+    width: 100%;
+    height: 45px;
+    font-family: 'Archivo';
+    font-size: 19px; color: #ffffff;
+    text-shadow: 1px 1px 2px #7e7e7e;
+    text-decoration: none;
+    padding: 0px 15px;
+    background-color: transparent;
+    border: none;
+}
+
+.botones_menu:hover {
+    background-color: #0078f042;  
+}
+
 .menu a {
     font-family: 'Archivo';
     font-size: 19px; color: #ffffff;
@@ -39,7 +59,7 @@
 
 .menu_items {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     width: 100%;
 }
 
@@ -47,11 +67,6 @@
     width: auto;
     text-align: center;
     padding: 20px;
-}
-
-.items:hover {
-    background-color: rgba(31, 158, 255, 0.44);
-    transition:  0.5s;
 }
 
 .logo_nav {
@@ -208,11 +223,25 @@ padding: 0px 10px;
         height: 25px !important;
     }
 
+    .botones_menu {
+        margin: -12px 0;
+        width: 100%;
+        height: 45px;
+        font-family: 'Archivo';
+        font-size: 19px;
+        color: #ffffff;
+        text-shadow: 1px 1px 2px #7e7e7e;
+        text-decoration: none;
+        background-color: var(--color_botones);
+        border: none;
+    }
+    
+
     .menu {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding: 12px 0px 0px 5px;
+        /* padding: 12px 0px 0px 5px; */
     }
     
     .menu_items {
@@ -223,10 +252,10 @@ padding: 0px 10px;
         margin-top: 25px;
     }
 
-    .menu a {
+    /* .menu a {
         font-size: 15px;
         padding: 11px 14px;
-    }
+    } */
 
     .textos_nav {
         display: flex;
@@ -301,15 +330,15 @@ padding: 0px 10px;
     .items {
         position: relative;
         flex-direction: column;
-        background-color: #016db5;
+        /* background-color: #016db5; */
         margin: 3px 0px ; 
     }
 
     .items, .logo_menu {
-        text-align: center;
+        /* text-align: center; */
         width: 100%;
-        height: 50%;
-        padding: 14px 0px;
+        height: auto;
+        /* padding: 14px 0px; */
     }
 
     .logo_nav {
@@ -391,4 +420,3 @@ padding: 0px 10px;
         display: none;
     }
 }
-
